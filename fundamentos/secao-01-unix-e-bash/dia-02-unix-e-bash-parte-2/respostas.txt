@@ -1,0 +1,10 @@
+- mkdir unix_tests_skills && cd unix_tests_skills
+- touch skills2.txt && cat > skills2.txt
+- cat >> skills2.txt
+- wc -l skills2.txt
+- head -3 skills2.txt | sort > top_skills.txt
+- touch phrases2.txt && cat > phrases2.txt
+- grep -in 'br' phrases2.txt
+- grep -inv 'br' phrases2.txt
+- cat phrases2.txt countries.txt > bunch_of_things.txt
+- sort --output=bunch_of_things.txt bunch_of_things.txt
