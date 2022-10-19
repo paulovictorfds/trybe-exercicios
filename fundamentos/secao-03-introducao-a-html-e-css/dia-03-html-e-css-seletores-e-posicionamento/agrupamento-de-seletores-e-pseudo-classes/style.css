@@ -1,0 +1,21 @@
+/* Centralizando o texto das tags ‘h1’ e ‘p’. */
+h1,
+p {
+    text-align: center;
+}
+
+/* Mudando a cor de fundo da lista quando o cursor estiver sobre o item. */
+ol li:hover {
+    background-color: rgb(69, 161, 69);
+}
+
+/* Mudando a fonte do item quando ele for clicado. */
+ol li:active {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Adicionando a propriedade ‘list-style: none’ para ambas as listas. */
+ul,
+ol {
+    list-style: none;
+}
