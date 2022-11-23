@@ -7,8 +7,12 @@ describe('A função printMessage', () => {
   it('retorna uma string iniciada com "Boas vindas,"', () => {
     expect(printMessage(info)).toMatch(new RegExp('^Boas vindas,'));    
   });
-  it('retorna um objeto com o valor personagem correto"', () => {
+  it('retorna uma mensagem com o nome do personagem correto"', () => {
     expect(printMessage(info)).toContain(info.personagem);
   });
-  
+  it('lança um erro "objeto inválido" se o parâmetro não for um objeto"', () => {
+    expect(() => {
+      printMessage('Margarida');
+    }).toThrow(('objeto inválido'));
+  });
 });
